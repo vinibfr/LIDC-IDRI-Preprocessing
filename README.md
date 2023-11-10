@@ -100,3 +100,6 @@ other researchers first starting to do lung cancer detection projects. Please gi
 here is the link of github where I learned a lot from. Some of the codes are sourced from below.
 1. https://github.com/mikejhuang/LungNoduleDetectionClassification
 
+
+## CHANGELOG
+Countour.py on pylidc needs to change the np.int to int

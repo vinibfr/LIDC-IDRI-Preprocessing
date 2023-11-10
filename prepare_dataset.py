@@ -68,7 +68,7 @@ class MakeDataSet:
     def save_meta(self,meta_list):
         """Saves the information of nodule to csv file"""
         tmp = pd.Series(meta_list,index=['patient_id','nodule_no','slice_no','original_image','mask_image','malignancy','is_cancer','is_clean'])
-        self.meta = self.meta.append(tmp,ignore_index=True)
+        self.meta = pd.concat([self.meta, tmp], ignore_index=True)
 
     def prepare_dataset(self):
         # This is to name each image and mask
